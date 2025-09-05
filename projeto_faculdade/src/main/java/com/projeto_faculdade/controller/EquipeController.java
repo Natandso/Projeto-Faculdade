@@ -52,7 +52,7 @@ public class EquipeController {
     public void vincularEquipeAProjeto() {
         try {
             int equipeId = view.lerIdEquipe();
-            int projetoId = view.lerIdEquipe();
+            int projetoId = view.lerIdProjeto();
             dao.vincularProjeto(equipeId, projetoId);
             view.mostrarMensagem("Equipe vinculada ao projeto com sucesso!");
         } catch (SQLException e) {
